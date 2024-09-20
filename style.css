@@ -6,25 +6,12 @@
 	
 }
 
-html, body {
-	
-	height: 100%;
-	
-}
-
 body {
 	
+	height: 100vh;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	flex-direction: column;
 	
-}
-
-body * {
-	
-	flex-grow: 1;
-	flex-shrink: 1;
 }
 
 header {
@@ -32,7 +19,6 @@ header {
 	background-color: red;
 	border: 1px solid black;
 	text-align: center;
-	width: 100%;
 	flex-grow: 0;
 	flex-basis: auto;
 	
@@ -67,25 +53,43 @@ li {
 	
 }
 
-aside {
+div  {
 	
-	width: 20%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	flex: 1 0 auto;
+	
+}
+
+section + aside {
+	
 	background-color: purple;
 	
 }
 
-header + aside {
+aside {
 	
 	background-color: yellow;
+	width: 150vw;
+}
+
+section {
+	
+	display: flex;
+	flex-flow: row wrap;
 	
 }
 
-div {
+p {
 	
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between;
-	max-width: 60%;
+	background-color: lightblue;
+	border: 1px solid white;
+	height: auto;
+	padding: 4px;
+	flex: 1 1 auto;
+	text-align: justify;
 	
 }
 
