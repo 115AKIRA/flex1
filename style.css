@@ -88,8 +88,18 @@ p {
 	border: 1px solid white;
 	height: auto;
 	padding: 4px;
-	flex: 1 1 auto;
+	flex: 1 1 0;
 	text-align: justify;
+	
+}
+
+@media screen and (max-width:1280px) {
+
+	p:last-child {
+	
+		flex-basis: 100%;
+	
+	}
 	
 }
 
